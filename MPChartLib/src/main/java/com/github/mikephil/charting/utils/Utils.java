@@ -627,7 +627,7 @@ public abstract class Utils {
         float lineY = y;
 
         for (String line : text.split("\n")) {
-            c.drawText(text, x, lineY, paint);
+            c.drawText(line, x, lineY, paint);
             lineY += paint.descent() - paint.ascent();
         }
     }
